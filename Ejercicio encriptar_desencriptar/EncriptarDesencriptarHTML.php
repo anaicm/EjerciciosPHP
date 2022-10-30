@@ -25,7 +25,7 @@ form{
 require("Configuracion_Encriptacion.php");//crea un objeto de una clase y llama a la funcion
 $objeto=new Configuracion_Encriptacion();
  session_start();
- if($_SESSION["iv"] === null){
+ if(!isset($_SESSION["iv"])){
  	$_SESSION["iv"] = $objeto->generar_IV();
  }
  
