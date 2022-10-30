@@ -21,13 +21,27 @@ form{
 
 </head>
 <body>
+<?php
+require("Configuracion_Encriptacion.php");//crea un objeto de una clase y llama a la funcion
+$objeto=new Configuracion_Encriptacion();
+ session_start();
+ if($_SESSION["iv"] === null){
+ 	$_SESSION["iv"] = $objeto->generar_IV();
+ }
+ 
+ //para pasar valor solo hay tres métodos get, post y session
+ //condicion:
+ //si es null que es la primera vez entra, por lo que la segunda entrara y no genera uno nuevo ya que no es null;
+?>
+
+
+
 
 <form action="Programa_Encriptar_Desencriptar.php" method="post">
 <p>Cadena:
  <label for="cadena"></label><input type="text" name="cadena" id="cadena" /></p>
-
 <input type="submit" name="encriptar" id="encriptar" value="encriptar" />
- <input type="submit" name="Desencriptar" id="Desencriptar" value="Desencriptar"/>
+<input type="submit" name="Desencriptar" id="Desencriptar" value="Desencriptar"/>
 </form>
 
 
