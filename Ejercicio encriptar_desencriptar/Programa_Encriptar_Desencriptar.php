@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Documento sin título</title>
 </head>
+<body>
 <?php
 //clave
 $clave="Encriptar Codigo";
@@ -12,7 +13,8 @@ $cadenaEncriptar=$_POST["cadena"];
 //método de encriptacion AES-256
 ~$metodo="AES-256-cbc";
 //funcion base64_decode, descodifica el contenido de un archivo binario.
-$vector_iniciacion = base64_decode("C9fBxl1EWtYTL1/M8jfstw==");
+session_start();
+$vector_iniciacion = base64_decode($_SESSION["iv"]);
 
  function encriptar($valor){
 	 global $metodo;
@@ -33,8 +35,11 @@ $vector_iniciacion = base64_decode("C9fBxl1EWtYTL1/M8jfstw==");
  }else if(isset($_POST["Desencriptar"])){
 	 echo desencriptar($cadenaEncriptar);
  }
-?>
 
-<body>
+?>
+<br>
+
+<a href="javascript:history.back()">Volver</a>
 </body>
 </html>
+
