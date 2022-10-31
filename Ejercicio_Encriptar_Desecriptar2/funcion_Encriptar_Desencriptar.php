@@ -8,6 +8,15 @@
 <body>
 
 <?php
+//clave
+$clave="Encriptar Codigo";
+//cadena para encriptar
+$cadenaEncriptar=$_POST["cadena"];
+//método de encriptacion AES-256
+~$metodo="AES-256-cbc";
+//funcion base64_decode, descodifica el contenido de un archivo binario.
+session_start();
+$vector_iniciacion = base64_decode($_SESSION["iv"]);
  function encriptar($valor){
 	 global $metodo;
 	 global $clave;

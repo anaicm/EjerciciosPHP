@@ -17,7 +17,7 @@ form{
 <body>
 
 <form action="codigo_Encriptar_Desencriptar.php" method="post">
-<p>Descodificar:<label for="cadena"></label><input type="text" name="cadena" id="cadena" /></p>
+<p>Desencriptar:<label for="cadena"></label><input type="text" name="cadena" id="cadena" /></p>
 <input type="submit" name="Desencriptar" id="Desencriptar" value="Desencriptar"/>
 </form>
 
