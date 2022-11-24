@@ -6,6 +6,8 @@
 </head>
 
 <body>
+<h1> Formulario Buscar</h1>
+
 <form action="buscar_registro.php" method="get">
 <label>Buscar:<input type="text" name="buscar" /></label>
 <input type="submit" name="enviado" value="Dale"   />
