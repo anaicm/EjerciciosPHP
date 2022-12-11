@@ -17,7 +17,22 @@
 	echo $fila_tabla["modelo"] . "</td><td>";
 	echo $fila_tabla["tipoVehiculo"] . "</td><td>";
 	echo $fila_tabla["matricula"] . "</td><td>";
-	echo $fila_tabla["nif_cliente"] . "</td></tr>";
+	echo $fila_tabla["nif_cliente"] . "</td><td>";
+/*	echo "<form action='actualizar_coches.php' method='get'>
+			<label>Modificar: 
+				<input type='submit' name='actualizar' value='" . $fila_tabla["matricula"] . "' />
+			</label>
+		</form>
+		</td><td>";*/
+		
+	echo "<a href='actualizar_coches.php?matricula=". $fila_tabla["matricula"]."'>Actualizar</a>
+		</td></tr>";
+		
+/*	echo "<form action='eliminar_coches.php' method='get'>
+			<label>
+				<input type='submit' name='borrar' value='Eliminar'/>
+			</label>
+		</form></td></tr>";*/
 	
  }
  
