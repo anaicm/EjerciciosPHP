@@ -10,6 +10,7 @@
 color:#003;
 font-size:14px;
 text-align:center}
+#insertar{}
 
 </style>
 
@@ -18,14 +19,18 @@ text-align:center}
 <h1>Concesionario</h1>
 
 </div>
+<div id="insertar">
+<h2><a href="insertar_coche.php">Insertar datos</a> </h2>
+</div>
 <table border="1">
 	<tr>
+    	<th>Matricula</th>
 		<th>Marca</th>
 		<th>Modelo</th>
     	<th>Tipo Vehículo</th>
-    	<th>Matricula</th>
     	<th>Nif</th>
         <th>Modificar</th>
+        <th>Eliminar</th>
    </tr>
    <tr>
    <?php require("tabla_coches.php");
