@@ -21,6 +21,20 @@ for($i=0; $i < $dado->getMaxNumDado(); $i++){
 	echo $dado->tirarDado() . "<br>";
 }
 
+//para crear el objeto con los setter
+//se crea un nuevo dado
+
+$dado1=new Dado(0,0);
+// con los setter se le da valor al mínimo y máximo del dado
+
+$dado1->setMinNumDado(0);
+$dado1->setMaxNumDado(10);
+
+for($a=0;$a<$dado->getMaxNumDado();$a++){
+	echo "En esta tirada sale: " . $dado1->tirarDado() . "<br>";
+	
+}
+
 ?>
 </body>
 </html>
