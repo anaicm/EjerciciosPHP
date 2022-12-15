@@ -1,0 +1,4 @@
+Ejercicio 1- Cree las cinco clases del esquema teniendo en cuenta su herencia. Todos los métodos
+			son públicos y los atributos son privados.
+			
+			<img src="imagen.jpg" alt="ejercicio1" width="851" height="660">
