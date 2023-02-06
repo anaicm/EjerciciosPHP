@@ -8,18 +8,15 @@
 <html>
 	<head>
 		<title>Usuarios</title>
-		<script src="AJAX.js"></script>
-		
 	</head>
 	<body>
 		
-		<h1>Usuarios</h1>
+		<center><h1>Usuarios</h1></center>
 		<!--lleva a la página para crear un usuario nuevo
         	que conecta con el archivo guardar usuario-->
-		<div id="introducir_datos">
 		<a href="nuevo.php">Nuevo usuario</a>
-		<div id="datos_devuelta"></div>
-		</div>
+		<p></p>
+		
 		<table border=1 width="80%">
 			<thead>
 				<tr>
